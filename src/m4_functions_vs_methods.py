@@ -245,7 +245,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -260,14 +260,14 @@ def try_methods_and_functions():
 
     steve.backward(150)
 
-    steve.speed(1)
+    steve.speed = 1
     draw_many_squares(steve, 2, 100, 30)
 
-    steve.speed(5)
+    steve.speed = 5
     steve.pen = rg.Pen('red', 5)
     draw_many_squares(steve, 10, 50, 15)
 
-    steve.speed(100)
+    steve.speed = 100
     steve.pen = rg.Pen('red', 35)
     draw_many_squares(steve, 8, 300, 60)
 
