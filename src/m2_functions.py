@@ -38,6 +38,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -114,6 +115,28 @@ def turtle4():
     steve.begin_fill()
     steve.draw_square(100)
     steve.end_fill()
+
+def turtle5():
+    bob = rg.SimpleTurtle()
+    bob.pen =rg.Pen('purple',50)
+    bob.paint_bucket =rg.PaintBucket('gold')
+
+    bob.forward(100)
+
+    bob.begin_fill()
+    bob.draw_regular_polygon(8,100)
+    bob.end_fill()
+
+    ryan = rg.SimpleTurtle()
+    ryan.pen =rg.Pen('blue',5)
+    ryan.paint_bucket =rg.PaintBucket('gold')
+
+    ryan.begin_fill()
+    ryan.draw_square(40)
+    ryan.end_fill()
+
+    ryan.forward(100)
+    ryan.right(100)
 
     ########################################################################
 #
@@ -195,7 +218,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
